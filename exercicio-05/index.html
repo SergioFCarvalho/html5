@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 05: Criando um Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="nome">Nome:</label>
+        <br />
+        <input type="text" id="nome" name="nome" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" name="email" id="email" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="contato">WhatsApp:</label>
+        <br />
+        <input type="tel" name="contato" id="contato" required />
+      </div>
+      <br />
+
+      <div>
+        <label>Área de atuação:</label>
+        <br />
+        <input type="radio" name="area" id="dev" value="dev" required />
+        <label for="area">Desenvolvimento</label>
+        <input type="radio" name="area" id="qa" value="qa" required />
+        <label for="area">Quality Assurance(QA)</label>
+        <input type="radio" name="area" id="dados" value="dados" required />
+        <label for="area">Análise de Dados</label>
+        <input type="radio" name="area" id="infra" value="infra" required />
+        <label for="area">Infraestrutura</label>
+      </div>
+      <br />
+
+      <div>
+        <label for="obs">Observações:</label>
+        <br />
+        <textarea name="obs" id="obs"></textarea>
+      </div>
+      <br />
+
+      <input type="checkbox" name="novidades" id="novidades" checked required />
+      <label for="novidades">Deseja receber novidades e ofertas</label>
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
